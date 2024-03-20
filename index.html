@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency pulse</title>
+    <script src="https://code.highcharts.com/stock/highstock.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="images/logo.jpg" alt="Логотип сайта">
+                    </a>
+                </div>
+                <ul class="menu">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Графики</a></li>
+                    <li><a href="#">Котировки</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Аналитика</a></li>
+                </ul>
+                <div class="account">
+                    <a href="#" class="button">Войти</a>
+                    <a href="#" class="button">Регистрация</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="chart" style="width:100%; height:400px;"></div>
+    <div id="currency-rates-buttons">
+        <button id="btn-eur-usd">EUR/USD</button>
+        <button id="btn-eur-rub">EUR/RUB</button>
+
+        <button id="btn-usd-rub">USD/RUB</button>
+        <button id="btn-usd-eur">USD/EUR</button>
+
+        <button id="btn-rub-usd">RUB/USD</button>
+        <button id="btn-rub-eur">RUB/EUR</button>
+    </div>
+    <div class="information-tape">
+        <img src="images/left-arrow.svg" class="arrow arrow-left">
+        <div class="tape">
+            <div class="inform-item">
+                <h2>Ежедневные обновления курсов валют</h2>
+                <p>Следите за изменениями курсов основных валют мира каждый день.</p>
+                <a href="#">Узнать больше</a>
+            </div>
+            <div class="inform-item">
+                <h2>Аналитика и прогнозы</h2>
+                <p>Получайте экспертные аналитические обзоры и прогнозы движения валютных пар.</p>
+                <a href="#">Узнать больше</a>
+            </div>
+            <div class="inform-item">
+                <h2>Новости рынка</h2>
+                <p>Будьте в курсе последних событий и новостей, влияющих на финансовые рынки.</p>
+                <a href="#">Узнать больше</a>
+            </div>
+            <div class="inform-item">
+                <h2>Инструменты для трейдера</h2>
+                <p>Предоставляем широкий спектр инструментов для успешной торговли на рынке валют.</p>
+                <a href="#">Узнать больше</a>
+            </div>
+            <div class="inform-item">
+                <h2>Обучение и курсы</h2>
+                <p>Изучайте фундаментальные и технические аспекты торговли валютами на наших курсах.</p>
+                <a href="#">Узнать больше</a>
+            </div>
+            <div class="inform-item">
+                <h2>Служба поддержки</h2>
+                <p>Наши специалисты всегда готовы ответить на ваши вопросы и помочь в решении проблем.</p>
+                <a href="#">Узнать больше</a>
+            </div>
+        </div>
+        <img src="images/right-arrow.svg" class="arrow arrow-right">
+    </div>
+    <div id="currency-news-container">
+        <div class="news-container">
+            <div class="news">
+                <div class="news-item">Новость 1</div>
+                <div class="news-item">Новость 2</div>
+                <div class="news-item">Новость 3</div>
+                <div class="news-item">Новость 4</div>
+                <div class="news-item">Новость 5</div>
+            </div>
+        </div>
+        <div id="cur-news">
+            <div id="currency-search">
+                <h1>Курсы валют</h1>
+                <div class="currency-buttons">
+                    <button id="btnRUB">RUB</button>
+                    <button id="btnUSD">USD</button>
+                    <button id="btnEUR">EUR</button>
+                </div>
+                <input type="text" id="searchInput" placeholder="Поиск...">
+                <div id="currency-container" class="currency-container"></div> <!-- Updated class -->
+            </div>
+            <div class="news-sidebar">
+                <h2>Последние новости</h2>
+                <ul>
+                    <li>Биткоин превысил отметку в $50 000</li>
+                    <li>Apple анонсировала новый iPhone 14</li>
+                    <li>Компания SpaceX запустила миссию на Марс</li>
+                    <li>Ученые объявили об обнаружении нового вида динозавра</li>
+                    <li>Россия победила на Олимпийских играх в Токио</li>
+                </ul>
+            </div>
+            <div class="charts">
+                <div id="chart1" style="height: 400px;"></div>
+                <div id="chart2" style="height: 400px;"></div>
+                <div id="chart3" style="height: 400px;"></div>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Контактная информация</h3>
+                <p>Телефон: +7 (XXX) XXX-XX-XX</p>
+                <p>Email: example@example.com</p>
+                <p>Адрес: Улица, Город, Страна</p>
+            </div>
+            <div class="social-links">
+                <h3>Мы в социальных сетях</h3>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Currency pulse. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>
